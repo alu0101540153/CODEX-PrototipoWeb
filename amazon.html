@@ -1,12 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <h1>TIENDA DE AMAZON</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazonClone - Tienda Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-  
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="add-first">Enviar a</p>
+            <div class="add-icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="add-sec">México</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>Todos los departamentos</option>
+                <option>Electrónicos</option>
+                <option>Computadoras</option>
+                <option>Hogar y Cocina</option>
+                <option>Libros</option>
+            </select>
+            <input type="text" placeholder="Buscar productos..." class="search-input">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="nav-signin border">
+            <p><span>Hola, Identifícate</span></p>
+            <p class="nav-second">Cuenta y Listas</p>
+        </div>
+
+        <div class="nav-return border">
+            <p><span>Devoluciones</span></p>
+            <p class="nav-second">y Pedidos</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Carrito</p>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Panel secundario -->
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fas fa-bars"></i>
+            <p>Todos</p>
+        </div>
+        <div class="panel-ops">
+            <p>Ofertas</p>
+            <p>Servicio al Cliente</p>
+            <p>Listas</p>
+            <p>Tarjetas de Regalo</p>
+            <p>Vender</p>
+        </div>
+        <div class="panel-deals">
+            <p>Ofertas en Electrónicos</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>Estás en amazon.com. <a href="#">Haz clic aquí para comprar en Amazon México.</a></p>
+        </div>
+    </div>
+
+    <!-- Contenido de la tienda -->
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Electrónicos</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Computadoras</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Hogar y Cocina</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Moda</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content">
+                <h2>Juguetes</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Belleza</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Libros</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Deportes</h2>
+                <div class="box-img" style="background-image: url('https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SY200_.jpg');"></div>
+                <p>Ver más</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ofertas destacadas -->
+    <div class="featured-deals">
+        <h2>Ofertas destacadas</h2>
+        <div class="deal-container">
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX200_.jpg" alt="Producto en oferta">
+                <p class="deal-price">$1,299 <span class="deal-original">$1,599</span></p>
+                <p class="deal-desc">Smart TV 50" 4K UHD</p>
+                <p class="deal-save">Ahorras $300</p>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX200_.jpg" alt="Producto en oferta">
+                <p class="deal-price">$899 <span class="deal-original">$1,199</span></p>
+                <p class="deal-desc">Laptop HP 14"</p>
+                <p class="deal-save">Ahorras $300</p>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX200_.jpg" alt="Producto en oferta">
+                <p class="deal-price">$499 <span class="deal-original">$699</span></p>
+                <p class="deal-desc">Smartphone Samsung</p>
+                <p class="deal-save">Ahorras $200</p>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX200_.jpg" alt="Producto en oferta">
+                <p class="deal-price">$199 <span class="deal-original">$249</span></p>
+                <p class="deal-desc">Audífonos Bluetooth</p>
+                <p class="deal-save">Ahorras $50</p>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX200_.jpg" alt="Producto en oferta">
+                <p class="deal-price">$149 <span class="deal-original">$199</span></p>
+                <p class="deal-desc">Altavoz Inteligente</p>
+                <p class="deal-save">Ahorras $50</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <a href="#">Volver al inicio</a>
+        </div>
+        
+        <div class="footer-middle">
+            <div class="footer-section">
+                <h3>Conócenos</h3>
+                <ul>
+                    <li><a href="#">Trabajar en Amazon</a></li>
+                    <li><a href="#">Información corporativa</a></li>
+                    <li><a href="#">Departamento de prensa</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Gana dinero con nosotros</h3>
+                <ul>
+                    <li><a href="#">Vender en Amazon</a></li>
+                    <li><a href="#">Vender en Amazon Business</a></li>
+                    <li><a href="#">Programa de afiliados</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Productos de pago</h3>
+                <ul>
+                    <li><a href="#">Métodos de pago</a></li>
+                    <li><a href="#">Conversor de divisas</a></li>
+                    <li><a href="#">Tarjetas de regalo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Podemos ayudarte</h3>
+                <ul>
+                    <li><a href="#">Amazon y COVID-19</a></li>
+                    <li><a href="#">Devolver o reemplazar productos</a></li>
+                    <li><a href="#">Gestionar contenido y dispositivos</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="logo"></div>
+            <div class="footer-links">
+                <a href="#">Condiciones de uso</a>
+                <a href="#">Aviso de privacidad</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Cookies</a>
+                <a href="#">Anuncios basados en intereses</a>
+            </div>
+            <div class="copyright">
+                <p>© 1996-2023, AmazonClone.com, Inc. o sus afiliados</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
