@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende JavaScript | CØDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/javascript.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Aprende JavaScript de forma interactiva</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="inicio.html"><i class="fas fa-arrow-left"></i> Volver</a>
+            <a href="#basico"><i class="fas fa-graduation-cap"></i> Básico</a>
+            <a href="#intermedio"><i class="fas fa-layer-group"></i> Intermedio</a>
+            <a href="#avanzado"><i class="fas fa-rocket"></i> Avanzado</a>
+            <a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a>
+            <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+        </div>
+    </nav>
+    
+    <section class="language-hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2><i class="fab fa-js"></i> Aprende JavaScript</h2>
+                <p>Domina el lenguaje de programación más importante para desarrollo web con nuestra plataforma interactiva.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 15%;"></div>
+                    </div>
+                    <small>15% completado</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="basico">
+        <div class="container">
+            <h2 class="section-title">Conceptos Básicos</h2>
+            <p class="section-subtitle">Comienza con los fundamentos de JavaScript</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>1. Hola Mundo</h3>
+                    <p>Aprende a escribir tu primer programa en JavaScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-hello-world">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="hello-world-code">console.log("Hola, mundo!");</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="hello-world-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>2. Variables y Tipos de Datos</h3>
+                    <p>Aprende a almacenar y manipular información en JavaScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-variables">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="variables-code">// Variables en JavaScript (let, const)
+let nombre = "Ana";
+const edad = 25;
+let altura = 1.65;
+let esEstudiante = true;
+
+console.log(`Nombre: ${nombre}`);
+console.log(`Edad: ${edad}`);
+console.log(`Altura: ${altura}`);
+console.log(`¿Es estudiante?: ${esEstudiante}`);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="variables-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>3. Operaciones Matemáticas</h3>
+                    <p>Realiza cálculos básicos con JavaScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-math">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="math-code">// Operaciones matemáticas básicas
+let a = 10;
+let b = 3;
+
+let suma = a + b;
+let resta = a - b;
+let multiplicacion = a * b;
+let division = a / b;
+let modulo = a % b;
+let potencia = a ** b;
+
+console.log(`Suma: ${suma}`);
+console.log(`Resta: ${resta}`);
+console.log(`Multiplicación: ${multiplicacion}`);
+console.log(`División: ${division}`);
+console.log(`Módulo: ${modulo}`);
+console.log(`Potencia: ${potencia}`);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="math-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="intermedio">
+        <div class="container">
+            <h2 class="section-title">Conceptos Intermedios</h2>
+            <p class="section-subtitle">Amplía tus conocimientos con estos conceptos</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>4. Condicionales</h3>
+                    <p>Aprende a controlar el flujo de tu programa con if/else.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-conditionals">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="conditionals-code">// Condicionales en JavaScript
+let edad = 18;
+
+if (edad < 18) {
+    console.log("Eres menor de edad");
+} else if (edad === 18) {
+    console.log("Acabas de cumplir la mayoría de edad");
+} else {
+    console.log("Eres mayor de edad");
+}
+
+// Operador ternario
+let mensaje = edad >= 18 ? "Puedes votar" : "No puedes votar";
+console.log(mensaje);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="conditionals-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>5. Bucles</h3>
+                    <p>Aprende a repetir acciones con for y while.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-loops">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="loops-code">// Bucles en JavaScript
+
+// Bucle for
+console.log("Bucle for:");
+for (let i = 0; i < 5; i++) {
+    console.log(`Valor: ${i}`);
+}
+
+// Bucle while
+console.log("\nBucle while:");
+let contador = 0;
+while (contador < 3) {
+    console.log(`Contador: ${contador}`);
+    contador++;
+}
+
+// Iterar sobre un array
+console.log("\nIterando sobre un array:");
+let frutas = ["manzana", "banana", "cereza"];
+for (let fruta of frutas) {
+    console.log(fruta.toUpperCase());
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="loops-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="avanzado">
+        <div class="container">
+            <h2 class="section-title">Conceptos Avanzados</h2>
+            <p class="section-subtitle">Domina JavaScript con estos conceptos avanzados</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>6. Funciones</h3>
+                    <p>Aprende a crear y usar funciones en JavaScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-functions">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="functions-code">// Funciones en JavaScript
+
+// Función básica
+function saludar(nombre) {
+    return `Hola, ${nombre}!`;
+}
+
+console.log(saludar("Juan"));
+
+// Función con parámetros opcionales (ES6)
+function calcularIVA(monto, iva = 0.16) {
+    return monto * iva;
+}
+
+console.log(`IVA: ${calcularIVA(100)}`);
+console.log(`IVA especial: ${calcularIVA(100, 0.08)}`);
+
+// Arrow function (ES6)
+const cuadrado = x => x ** 2;
+console.log(`Cuadrado de 5: ${cuadrado(5)}`);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="functions-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos Prácticos</h2>
+            <p class="section-subtitle">Aplica lo aprendido con estos proyectos</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>Calculadora Básica</h3>
+                    <p>Crea una calculadora que realice operaciones básicas.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js"></i> Editor JavaScript</span>
+                            <button class="btn-run" id="run-calculator">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="calculator-code">// Calculadora básica
+function calculadora() {
+    console.log("1. Suma");
+    console.log("2. Resta");
+    console.log("3. Multiplicación");
+    console.log("4. División");
+    
+    let opcion = prompt("Elige una opción (1-4): ");
+    let num1 = parseFloat(prompt("Ingresa el primer número: "));
+    let num2 = parseFloat(prompt("Ingresa el segundo número: "));
+    
+    if (opcion === '1') {
+        console.log(`Resultado: ${num1 + num2}`);
+    } else if (opcion === '2') {
+        console.log(`Resultado: ${num1 - num2}`);
+    } else if (opcion === '3') {
+        console.log(`Resultado: ${num1 * num2}`);
+    } else if (opcion === '4') {
+        if (num2 !== 0) {
+            console.log(`Resultado: ${num1 / num2}`);
+        } else {
+            console.log("Error: División por cero");
+        }
+    } else {
+        console.log("Opción inválida");
+    }
+}
+
+// Para probar la calculadora, descomenta la siguiente línea:
+// calculadora();</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="calculator-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Ver siguiente proyecto <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CØDEX</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CØDEX. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/loggear.js"></script>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>

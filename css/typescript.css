@@ -1,0 +1,58 @@
+/* Estilos específicos para la página de TypeScript */
+:root {
+    --ts-color: #3178C6;
+    --ts-secondary: #FFFFFF;
+    --ts-dark: #1E1E1E;
+  }
+  
+  .language-hero {
+    background: linear-gradient(135deg, var(--ts-color), #235a97);
+  }
+  
+  .btn-run {
+    background-color: var(--ts-color);
+    color: white;
+  }
+  
+  .btn-run:hover {
+    background-color: #235a97;
+  }
+  
+  .progress {
+    background-color: var(--ts-color);
+  }
+  
+  .tutorial-card h3 {
+    color: var(--ts-color);
+    border-left: 4px solid var(--ts-color);
+    padding-left: 10px;
+  }
+  
+  .next-btn {
+    border-color: var(--ts-color);
+    color: var(--ts-color);
+  }
+  
+  .next-btn:hover {
+    background-color: var(--ts-color);
+    color: white;
+  }
+  
+  .interactive-editor {
+    border: 1px solid var(--ts-color);
+  }
+  
+  .editor-header {
+    background-color: var(--ts-dark);
+    color: var(--ts-secondary);
+  }
+  
+  .output-container {
+    background-color: var(--ts-dark);
+    color: var(--ts-dark);
+  }
+  
+  .output-header {
+    background-color: var(--ts-color);
+    color: white;
+  }

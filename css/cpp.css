@@ -1,0 +1,58 @@
+/* Estilos específicos para la página de C++ */
+:root {
+    --cpp-color: #00599C;
+    --cpp-secondary: #659AD2;
+    --cpp-dark: #003366;
+  }
+  
+  .language-hero {
+    background: linear-gradient(135deg, var(--cpp-color), var(--cpp-dark));
+  }
+  
+  .btn-run {
+    background-color: var(--cpp-color);
+    color: white;
+  }
+  
+  .btn-run:hover {
+    background-color: var(--cpp-dark);
+  }
+  
+  .progress {
+    background-color: var(--cpp-color);
+  }
+  
+  .tutorial-card h3 {
+    color: var(--cpp-color);
+    border-left: 4px solid var(--cpp-color);
+    padding-left: 10px;
+  }
+  
+  .next-btn {
+    border-color: var(--cpp-color);
+    color: var(--cpp-color);
+  }
+  
+  .next-btn:hover {
+    background-color: var(--cpp-color);
+    color: white;
+  }
+  
+  .interactive-editor {
+    border: 1px solid var(--cpp-secondary);
+  }
+  
+  .editor-header {
+    background-color: var(--cpp-dark);
+    color: white;
+  }
+  
+  .output-container {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .output-header {
+    background-color: var(--cpp-secondary);
+    color: white;
+  }

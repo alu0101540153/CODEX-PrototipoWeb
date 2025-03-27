@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende TypeScript | CØDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/typescript.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Aprende TypeScript de forma interactiva</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="inicio.html"><i class="fas fa-arrow-left"></i> Volver</a>
+            <a href="#basico"><i class="fas fa-graduation-cap"></i> Básico</a>
+            <a href="#intermedio"><i class="fas fa-layer-group"></i> Intermedio</a>
+            <a href="#avanzado"><i class="fas fa-rocket"></i> Avanzado</a>
+            <a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a>
+            <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+        </div>
+    </nav>
+    
+    <section class="language-hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2><i class="fab fa-js-square"></i> Aprende TypeScript</h2>
+                <p>Domina el superset tipado de JavaScript que escala a cualquier proyecto.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 10%;"></div>
+                    </div>
+                    <small>10% completado</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="basico">
+        <div class="container">
+            <h2 class="section-title">Conceptos Básicos</h2>
+            <p class="section-subtitle">Comienza con los fundamentos de TypeScript</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>1. Hola Mundo</h3>
+                    <p>Escribe tu primer programa en TypeScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-hello-world">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="hello-world-code">console.log("Hola, mundo!");</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="hello-world-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>2. Tipos Básicos</h3>
+                    <p>Tipado estático en TypeScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-types">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="types-code">// Tipos básicos en TypeScript
+let nombre: string = "Ana";
+const edad: number = 25;
+let altura: number = 1.65;
+let esEstudiante: boolean = true;
+
+// Arrays tipados
+let lenguajes: string[] = ["TypeScript", "JavaScript", "Python"];
+
+// Tuplas
+let persona: [string, number] = ["Ana", 25];
+
+console.log(`Nombre: ${nombre}, Tipo: ${typeof nombre}`);
+console.log(`Edad: ${edad}, Tipo: ${typeof edad}`);
+console.log(`Lenguajes: ${lenguajes.join(", ")}`);
+console.log(`Tupla: ${persona[0]} tiene ${persona[1]} años`);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="types-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>3. Interfaces</h3>
+                    <p>Define la estructura de tus objetos.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-interfaces">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="interfaces-code">// Interfaces en TypeScript
+interface Usuario {
+    nombre: string;
+    edad: number;
+    email?: string; // Opcional
+}
+
+function mostrarUsuario(usuario: Usuario): void {
+    console.log(`Nombre: ${usuario.nombre}`);
+    console.log(`Edad: ${usuario.edad}`);
+    if (usuario.email) {
+        console.log(`Email: ${usuario.email}`);
+    }
+}
+
+const usuario1: Usuario = {
+    nombre: "Carlos",
+    edad: 30,
+    email: "carlos@ejemplo.com"
+};
+
+mostrarUsuario(usuario1);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="interfaces-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="intermedio">
+        <div class="container">
+            <h2 class="section-title">Conceptos Intermedios</h2>
+            <p class="section-subtitle">Amplía tus conocimientos con estos conceptos</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>4. Clases</h3>
+                    <p>Programación orientada a objetos en TypeScript.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-classes">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="classes-code">// Clases en TypeScript
+class Persona {
+    // Propiedades tipadas
+    nombre: string;
+    edad: number;
+    
+    // Constructor
+    constructor(nombre: string, edad: number) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+    
+    // Método
+    saludar(): void {
+        console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años`);
+    }
+}
+
+// Herencia
+class Estudiante extends Persona {
+    curso: string;
+    
+    constructor(nombre: string, edad: number, curso: string) {
+        super(nombre, edad);
+        this.curso = curso;
+    }
+    
+    estudiar(): void {
+        console.log(`${this.nombre} está estudiando ${this.curso}`);
+    }
+}
+
+const estudiante = new Estudiante("Ana", 20, "TypeScript");
+estudiante.saludar();
+estudiante.estudiar();</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="classes-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>5. Genéricos</h3>
+                    <p>Crea componentes reutilizables con genéricos.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-generics">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="generics-code">// Genéricos en TypeScript
+function identidad<T>(arg: T): T {
+    return arg;
+}
+
+// Uso con diferentes tipos
+let salida1 = identidad<string>("Hola TypeScript");
+let salida2 = identidad<number>(42);
+
+console.log(salida1);
+console.log(salida2);
+
+// Clase genérica
+class Caja<T> {
+    contenido: T;
+    
+    constructor(contenido: T) {
+        this.contenido = contenido;
+    }
+    
+    mostrarContenido(): void {
+        console.log(`Contenido: ${this.contenido}`);
+    }
+}
+
+const caja1 = new Caja<string>("Libro");
+const caja2 = new Caja<number>(100);
+
+caja1.mostrarContenido();
+caja2.mostrarContenido();</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="generics-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="avanzado">
+        <div class="container">
+            <h2 class="section-title">Conceptos Avanzados</h2>
+            <p class="section-subtitle">Domina TypeScript con estos conceptos avanzados</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>6. Tipos Avanzados</h3>
+                    <p>Tipos condicionales, mapeados y utilitarios.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-advanced-types">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="advanced-types-code">// Tipos avanzados en TypeScript
+type Animal = {
+    nombre: string;
+    edad: number;
+    tipo: 'terrestre' | 'acuático' | 'aéreo';
+};
+
+// Tipos utilitarios
+const perro: Readonly<Animal> = {
+    nombre: "Fido",
+    edad: 5,
+    tipo: "terrestre"
+};
+
+// perro.nombre = "Rex"; // Error: propiedad readonly
+
+// Tipos condicionales
+type EsString<T> = T extends string ? true : false;
+type A = EsString<'hola'>; // true
+type B = EsString<123>; // false
+
+// Mapeado de tipos
+type Opciones<T> = {
+    [P in keyof T]?: T[P];
+};
+
+const usuarioOpciones: Opciones<Animal> = {
+    nombre: "Sin nombre"
+};
+
+console.log(perro);
+console.log(usuarioOpciones);</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="advanced-types-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos Prácticos</h2>
+            <p class="section-subtitle">Aplica lo aprendido con estos proyectos</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>API con Tipos</h3>
+                    <p>Simula una API con tipos estrictos.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fab fa-js-square"></i> Editor TypeScript</span>
+                            <button class="btn-run" id="run-api-project">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="api-project-code">// Proyecto: API con TypeScript
+type Usuario = {
+    id: number;
+    nombre: string;
+    email: string;
+};
+
+type Producto = {
+    id: number;
+    nombre: string;
+    precio: number;
+};
+
+class FakeAPI {
+    private usuarios: Usuario[] = [
+        { id: 1, nombre: "Ana", email: "ana@ejemplo.com" },
+        { id: 2, nombre: "Carlos", email: "carlos@ejemplo.com" }
+    ];
+    
+    private productos: Producto[] = [
+        { id: 1, nombre: "Laptop", precio: 999 },
+        { id: 2, nombre: "Teléfono", precio: 599 }
+    ];
+    
+    async getUsuarios(): Promise<Usuario[]> {
+        return this.usuarios;
+    }
+    
+    async getProductos(): Promise<Producto[]> {
+        return this.productos;
+    }
+    
+    async getUsuarioById(id: number): Promise<Usuario | undefined> {
+        return this.usuarios.find(u => u.id === id);
+    }
+}
+
+(async () => {
+    const api = new FakeAPI();
+    const usuarios = await api.getUsuarios();
+    const productos = await api.getProductos();
+    const usuario = await api.getUsuarioById(1);
+    
+    console.log("Usuarios:", usuarios);
+    console.log("Productos:", productos);
+    console.log("Usuario con ID 1:", usuario);
+})();</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="api-project-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Ver siguiente proyecto <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CØDEX</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CØDEX. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/loggear.js"></script>
+    <script src="./js/typescript.js"></script>
+</body>
+</html>

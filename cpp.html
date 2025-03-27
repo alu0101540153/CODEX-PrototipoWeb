@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende C++ | CØDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/cpp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Aprende C++ de forma interactiva</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="inicio.html"><i class="fas fa-arrow-left"></i> Volver</a>
+            <a href="#basico"><i class="fas fa-graduation-cap"></i> Básico</a>
+            <a href="#intermedio"><i class="fas fa-layer-group"></i> Intermedio</a>
+            <a href="#avanzado"><i class="fas fa-rocket"></i> Avanzado</a>
+            <a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a>
+            <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+        </div>
+    </nav>
+    
+    <section class="language-hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2><i class="fas fa-copyright"></i> Aprende C++</h2>
+                <p>Domina uno de los lenguajes de programación más potentes y versátiles.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 10%;"></div>
+                    </div>
+                    <small>10% completado</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="basico">
+        <div class="container">
+            <h2 class="section-title">Conceptos Básicos</h2>
+            <p class="section-subtitle">Comienza con los fundamentos de C++</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>1. Hola Mundo</h3>
+                    <p>Escribe tu primer programa en C++.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-hello-world">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="hello-world-code">#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hola, mundo!" << endl;
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="hello-world-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>2. Variables y Tipos</h3>
+                    <p>Aprende sobre tipos de datos en C++.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-variables">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="variables-code">#include <iostream>
+using namespace std;
+
+int main() {
+    // Tipos básicos
+    int edad = 25;
+    float altura = 1.65f;
+    double pi = 3.141592;
+    char inicial = 'A';
+    bool esEstudiante = true;
+    
+    cout << "Edad: " << edad << endl;
+    cout << "Altura: " << altura << endl;
+    cout << "Pi: " << pi << endl;
+    cout << "Inicial: " << inicial << endl;
+    cout << "Es estudiante: " << boolalpha << esEstudiante << endl;
+    
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="variables-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>3. Operaciones</h3>
+                    <p>Realiza operaciones matemáticas en C++.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-operations">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="operations-code">#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 3;
+    
+    cout << "Suma: " << a + b << endl;
+    cout << "Resta: " << a - b << endl;
+    cout << "Multiplicación: " << a * b << endl;
+    cout << "División: " << (float)a / b << endl;
+    cout << "Módulo: " << a % b << endl;
+    
+    // Operadores de incremento
+    int c = 5;
+    cout << "Pre-incremento: " << ++c << endl;
+    cout << "Post-incremento: " << c++ << endl;
+    cout << "Valor final: " << c << endl;
+    
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="operations-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="intermedio">
+        <div class="container">
+            <h2 class="section-title">Conceptos Intermedios</h2>
+            <p class="section-subtitle">Amplía tus conocimientos con estos conceptos</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>4. Condicionales</h3>
+                    <p>Control de flujo con if/else.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-conditionals">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="conditionals-code">#include <iostream>
+using namespace std;
+
+int main() {
+    int edad = 18;
+    
+    if (edad < 18) {
+        cout << "Eres menor de edad" << endl;
+    } else if (edad == 18) {
+        cout << "Acabas de cumplir la mayoría de edad" << endl;
+    } else {
+        cout << "Eres mayor de edad" << endl;
+    }
+    
+    // Operador ternario
+    string mensaje = (edad >= 18) ? "Puedes votar" : "No puedes votar";
+    cout << mensaje << endl;
+    
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="conditionals-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3>5. Bucles</h3>
+                    <p>Estructuras de repetición en C++.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-loops">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="loops-code">#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Bucle for
+    cout << "Bucle for:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "Valor: " << i << endl;
+    }
+    
+    // Bucle while
+    cout << "\nBucle while:" << endl;
+    int contador = 0;
+    while (contador < 3) {
+        cout << "Contador: " << contador << endl;
+        contador++;
+    }
+    
+    // Bucle for con iterador
+    cout << "\nIterando sobre un vector:" << endl;
+    vector<string> frutas = {"manzana", "banana", "cereza"};
+    for (auto fruta : frutas) {
+        cout << fruta << endl;
+    }
+    
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="loops-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="avanzado">
+        <div class="container">
+            <h2 class="section-title">Conceptos Avanzados</h2>
+            <p class="section-subtitle">Domina C++ con estos conceptos avanzados</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>6. Clases y Objetos</h3>
+                    <p>Programación orientada a objetos en C++.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-classes">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="classes-code">#include <iostream>
+#include <string>
+using namespace std;
+
+class Persona {
+private:
+    string nombre;
+    int edad;
+    
+public:
+    // Constructor
+    Persona(string nombre, int edad) : nombre(nombre), edad(edad) {}
+    
+    // Método
+    void saludar() {
+        cout << "Hola, soy " << nombre << " y tengo " << edad << " años" << endl;
+    }
+};
+
+class Estudiante : public Persona {
+private:
+    string curso;
+    
+public:
+    Estudiante(string nombre, int edad, string curso) 
+        : Persona(nombre, edad), curso(curso) {}
+    
+    void estudiar() {
+        cout << "Estoy estudiando " << curso << endl;
+    }
+};
+
+int main() {
+    Estudiante estudiante("Ana", 20, "Programación C++");
+    estudiante.saludar();
+    estudiante.estudiar();
+    
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="classes-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Siguiente lección <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tutorial-section" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos Prácticos</h2>
+            <p class="section-subtitle">Aplica lo aprendido con estos proyectos</p>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <h3>Calculadora</h3>
+                    <p>Implementa una calculadora básica.</p>
+                    <div class="interactive-editor">
+                        <div class="editor-header">
+                            <span><i class="fas fa-copyright"></i> Editor C++</span>
+                            <button class="btn-run" id="run-calculator">
+                                <i class="fas fa-play"></i> Ejecutar
+                            </button>
+                        </div>
+                        <div class="editor-content" contenteditable="true" id="calculator-code">#include <iostream>
+using namespace std;
+
+int main() {
+    int opcion;
+    double num1, num2;
+    
+    cout << "1. Suma" << endl;
+    cout << "2. Resta" << endl;
+    cout << "3. Multiplicación" << endl;
+    cout << "4. División" << endl;
+    cout << "Elige una opción (1-4): ";
+    cin >> opcion;
+    
+    cout << "Ingresa el primer número: ";
+    cin >> num1;
+    cout << "Ingresa el segundo número: ";
+    cin >> num2;
+    
+    switch(opcion) {
+        case 1:
+            cout << "Resultado: " << num1 + num2 << endl;
+            break;
+        case 2:
+            cout << "Resultado: " << num1 - num2 << endl;
+            break;
+        case 3:
+            cout << "Resultado: " << num1 * num2 << endl;
+            break;
+        case 4:
+            if (num2 != 0) {
+                cout << "Resultado: " << num1 / num2 << endl;
+            } else {
+                cout << "Error: División por cero" << endl;
+            }
+            break;
+        default:
+            cout << "Opción inválida" << endl;
+    }
+    
+    return 0;
+}</div>
+                        <div class="output-container">
+                            <div class="output-header">
+                                <span>Resultado:</span>
+                            </div>
+                            <div class="output" id="calculator-output"></div>
+                        </div>
+                    </div>
+                    <button class="btn-outline next-btn">
+                        Ver siguiente proyecto <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CØDEX</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CØDEX. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/loggear.js"></script>
+    <script src="./js/cpp.js"></script>
+</body>
+</html>

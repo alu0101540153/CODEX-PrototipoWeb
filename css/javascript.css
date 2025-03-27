@@ -1,0 +1,67 @@
+/* Estilos específicos para la página de JavaScript */
+:root {
+    --js-color: #F7DF1E;
+    --js-secondary: #000000;
+    --js-dark: #323330;
+  }
+  
+  .language-hero {
+    background: linear-gradient(135deg, var(--js-dark), #000000);
+  }
+  
+  .btn-run {
+    background-color: var(--js-color);
+    color: var(--js-dark);
+    font-weight: 600;
+  }
+  
+  .btn-run:hover {
+    background-color: #e6cf1a;
+    color: var(--js-dark);
+  }
+  
+  .progress {
+    background-color: var(--js-color);
+  }
+  
+  .tutorial-card h3 {
+    color: var(--js-dark);
+    border-left: 4px solid var(--js-color);
+    padding-left: 10px;
+  }
+  
+  .next-btn {
+    border-color: var(--js-dark);
+    color: var(--js-dark);
+  }
+  
+  .next-btn:hover {
+    background-color: var(--js-dark);
+    color: white;
+  }
+  
+  /* Estilos adicionales específicos para JS */
+  .interactive-editor {
+    border: 1px solid var(--js-color);
+  }
+  
+  .editor-header {
+    background-color: var(--js-dark);
+    color: var(--js-color);
+  }
+  
+  /* Ajustes para mejor contraste */
+  .editor-content {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .output-container {
+    background-color: #2d2d2d;
+    color: #2d2d2d;
+  }
+  
+  .output-header {
+    background-color: var(--js-dark);
+    color: var(--js-color);
+  }
