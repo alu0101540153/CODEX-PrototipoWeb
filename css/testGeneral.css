@@ -1,8 +1,20 @@
-/* Estilos específicos para el test general */
+:root {
+    --primary: #053114;
+    --primary-dark: #3a52be;
+    --secondary: #3f37c9;
+    --accent: #4381b4;
+    --light-bg: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Estilos para el hero del test */
 .test-hero {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     text-align: center;
 }
 
@@ -18,21 +30,34 @@
 .test-hero p {
     font-size: 1.2rem;
     opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
+/* Sección principal del test */
 .test-section {
-    padding: 3rem 0;
-    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+    background-color: var(--light-bg);
 }
 
 .test-form {
     max-width: 800px;
     margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
 }
 
+/* Tarjetas de preguntas */
 .question-card {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     border-left: 4px solid var(--primary);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+    transition: var(--transition);
 }
 
 .question-card:hover {
@@ -44,77 +69,121 @@
     color: var(--primary);
     margin-bottom: 1.5rem;
     font-size: 1.25rem;
+    font-weight: 600;
 }
 
+/* Opciones de respuesta */
 .form-check {
     margin-bottom: 0.75rem;
     padding-left: 2rem;
+    position: relative;
 }
 
 .form-check-input {
     width: 1.2em;
     height: 1.2em;
     margin-top: 0.2em;
+    margin-left: -1.5rem;
+    cursor: pointer;
 }
 
 .form-check-label {
     font-size: 1.05rem;
     cursor: pointer;
+    display: block;
+    padding: 0.25rem 0;
+    transition: var(--transition);
 }
 
+.form-check-label:hover {
+    color: #0c360e;
+}
+
+/* Botón de enviar */
 .submit-test {
+    display: inline-block;
     padding: 0.75rem 2rem;
     font-size: 1.1rem;
+    font-weight: 500;
     background-color: var(--primary);
+    color: white;
     border: none;
-    transition: all 0.3s;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1rem;
 }
 
 .submit-test:hover {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
+/* Resultados */
 .results-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
 .score-container {
     padding: 1.5rem;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
     border-radius: 8px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .feedback-container {
     padding: 1.5rem;
     border-radius: 8px;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
+    line-height: 1.6;
 }
 
 .feedback-container i {
     color: var(--primary);
+    margin-right: 0.5rem;
 }
 
+/* Barra de progreso */
 .progress-bar {
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 5px;
     transition: width 1s ease-in-out;
+    margin: 1rem 0;
 }
 
+/* Botón outline */
 .btn-outline-primary {
     color: var(--primary);
-    border-color: var(--primary);
+    border: 2px solid var(--primary);
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    display: inline-block;
+    font-weight: 500;
 }
 
 .btn-outline-primary:hover {
     background-color: var(--primary);
     color: white;
+    text-decoration: none;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
+    .test-hero {
+        padding: 2rem 1rem;
+    }
+    
     .test-hero h2 {
         font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
     }
     
     .question-title {
@@ -124,4 +193,53 @@
     .form-check-label {
         font-size: 1rem;
     }
+    
+    .test-form {
+        padding: 1rem;
+    }
+    
+    .form-check {
+        padding-left: 1.5rem;
+    }
+}
+
+/* Mejoras de accesibilidad */
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(5, 49, 20, 0.25);
+}
+
+.submit-test:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(5, 49, 20, 0.25);
+}
+
+/* Elimina el subrayado de TODOS los enlaces del nav */
+nav a {
+    text-decoration: none !important;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+}
+
+/* Opcional: Efecto hover personalizado sin subrayado */
+nav a:hover {
+    color: var(--primary);
+    transform: translateY(-1px);
+}
+
+/* Estilos específicos para el botón de login */
+nav a.login-btn {
+    background-color: var(--accent);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a.login-btn:hover {
+    background-color: var(--secondary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
