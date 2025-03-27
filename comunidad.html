@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad CODEX - Foro de Programación</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Comunidad de programación interactiva</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="index.html#inicio"><i class="fas fa-home"></i> Inicio</a>
+            <a href="index.html#lenguajes"><i class="fas fa-laptop-code"></i> Lenguajes</a>
+            <a href="index.html#tutoriales"><i class="fas fa-graduation-cap"></i> Tutoriales</a>
+            <a href="index.html#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a>
+            <a href="comunidad.html" class="active"><i class="fas fa-users"></i> Comunidad</a>
+            <a href="equipo.html"><i class="fas fa-users-cog"></i> Equipo CODEX</a>
+            <a href="index.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+        </div>
+    </nav>
+    
+    <section class="community-section">
+        <div class="container">
+            <div class="community-header">
+                <h2>Foro de la Comunidad CODEX</h2>
+                <p>Resuelve dudas, comparte conocimientos y conecta con otros programadores</p>
+                <button class="btn-primary" id="new-topic-btn">
+                    <i class="fas fa-plus"></i> Nuevo Tema
+                </button>
+            </div>
+            
+            <div class="community-layout">
+                <!-- Sección principal del foro -->
+                <div class="forum-container">
+                    <!-- Filtros y búsqueda -->
+                    <div class="forum-filters">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar en el foro...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="filter-options">
+                            <select>
+                                <option>Todos los temas</option>
+                                <option>Python</option>
+                                <option>JavaScript</option>
+                                <option>TypeScript</option>
+                                <option>C++</option>
+                                <option>Proyectos</option>
+                                <option>General</option>
+                            </select>
+                            <select>
+                                <option>Recientes primero</option>
+                                <option>Más antiguos primero</option>
+                                <option>Más activos</option>
+                                <option>Mejor valorados</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Lista de discusiones -->
+                    <div class="discussions-list">
+                        <!-- Discusión destacada -->
+                        <div class="discussion-card featured">
+                            <div class="discussion-badge">
+                                <i class="fas fa-star"></i> Destacado
+                            </div>
+                            <div class="discussion-content">
+                                <h3><a href="#">¿Cómo optimizar código Python para análisis de datos?</a></h3>
+                                <p class="discussion-excerpt">Estoy trabajando con un dataset muy grande y mi código tarda demasiado en procesarlo. ¿Alguien tiene consejos para optimizar el rendimiento?</p>
+                                <div class="discussion-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Ana Martínez</span>
+                                    <span class="replies"><i class="fas fa-comments"></i> 24 respuestas</span>
+                                    <span class="views"><i class="fas fa-eye"></i> 156 vistas</span>
+                                    <span class="date"><i class="far fa-clock"></i> Hace 2 días</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Otras discusiones -->
+                        <div class="discussion-card">
+                            <div class="discussion-content">
+                                <h3><a href="#">Duda con async/await en JavaScript</a></h3>
+                                <p class="discussion-excerpt">No entiendo por qué mi función async no espera a que se complete la promesa antes de continuar...</p>
+                                <div class="discussion-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Carlos López</span>
+                                    <span class="replies"><i class="fas fa-comments"></i> 8 respuestas</span>
+                                    <span class="views"><i class="fas fa-eye"></i> 89 vistas</span>
+                                    <span class="date"><i class="far fa-clock"></i> Hace 5 horas</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-card">
+                            <div class="discussion-content">
+                                <h3><a href="#">Problema con punteros en C++</a></h3>
+                                <p class="discussion-excerpt">Estoy teniendo problemas con segmentation fault al trabajar con punteros en mi proyecto de estructuras de datos...</p>
+                                <div class="discussion-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Javier Ruiz</span>
+                                    <span class="replies"><i class="fas fa-comments"></i> 15 respuestas</span>
+                                    <span class="views"><i class="fas fa-eye"></i> 120 vistas</span>
+                                    <span class="date"><i class="far fa-clock"></i> Ayer</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-card">
+                            <div class="discussion-content">
+                                <h3><a href="#">¿TypeScript vale la pena para proyectos pequeños?</a></h3>
+                                <p class="discussion-excerpt">Estoy comenzando un proyecto personal y no sé si añadir TypeScript sería demasiada complejidad para algo pequeño...</p>
+                                <div class="discussion-meta">
+                                    <span class="author"><i class="fas fa-user"></i> María González</span>
+                                    <span class="replies"><i class="fas fa-comments"></i> 11 respuestas</span>
+                                    <span class="views"><i class="fas fa-eye"></i> 97 vistas</span>
+                                    <span class="date"><i class="far fa-clock"></i> Hace 1 día</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discussion-card">
+                            <div class="discussion-content">
+                                <h3><a href="#">Comparto mi proyecto: Juego de memoria en JavaScript</a></h3>
+                                <p class="discussion-excerpt">He terminado mi primer proyecto usando JavaScript puro y quería compartirlo con la comunidad para recibir feedback...</p>
+                                <div class="discussion-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Pedro Sánchez</span>
+                                    <span class="replies"><i class="fas fa-comments"></i> 7 respuestas</span>
+                                    <span class="views"><i class="fas fa-eye"></i> 64 vistas</span>
+                                    <span class="date"><i class="far fa-clock"></i> Hace 3 días</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Paginación -->
+                    <div class="pagination">
+                        <button disabled><i class="fas fa-chevron-left"></i></button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Sidebar con chat y estadísticas -->
+                <div class="community-sidebar">
+                    <!-- Chat en vivo -->
+                    <div class="sidebar-widget live-chat">
+                        <h3><i class="fas fa-comment-dots"></i> Chat en Vivo</h3>
+                        <div class="chat-messages">
+                            <div class="message">
+                                <span class="user">AnaM:</span>
+                                <span class="text">¿Alguien ha trabajado con Pandas para limpieza de datos?</span>
+                                <span class="time">14:32</span>
+                            </div>
+                            <div class="message reply">
+                                <span class="user">CarlosDev:</span>
+                                <span class="text">Sí, yo he usado bastante. ¿Qué problema tienes exactamente?</span>
+                                <span class="time">14:33</span>
+                            </div>
+                            <div class="message">
+                                <span class="user">JaviPy:</span>
+                                <span class="text">Yo también puedo ayudar, justo terminé un proyecto con eso</span>
+                                <span class="time">14:34</span>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Escribe tu mensaje...">
+                            <button><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <div class="online-users">
+                            <span><i class="fas fa-circle online"></i> 15 usuarios conectados</span>
+                            <span class="users-list">AnaM, CarlosDev, JaviPy, MariaTS, PedroJS...</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Estadísticas del foro -->
+                    <div class="sidebar-widget stats">
+                        <h3><i class="fas fa-chart-bar"></i> Estadísticas</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">1,245</div>
+                                <div class="stat-label">Temas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">5,892</div>
+                                <div class="stat-label">Respuestas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">1,843</div>
+                                <div class="stat-label">Usuarios</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Temas populares -->
+                    <div class="sidebar-widget popular-topics">
+                        <h3><i class="fas fa-fire"></i> Temas Populares</h3>
+                        <ul>
+                            <li><a href="#">Cómo depurar código JavaScript</a></li>
+                            <li><a href="#">Mejores prácticas Python 2023</a></li>
+                            <li><a href="#">TypeScript vs JavaScript: comparación</a></li>
+                            <li><a href="#">Guía completa de punteros en C++</a></li>
+                            <li><a href="#">Cómo contribuir a proyectos open source</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal para nuevo tema (oculto por defecto) -->
+    <div class="modal" id="new-topic-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fas fa-plus"></i> Crear Nuevo Tema</h3>
+            <form id="new-topic-form">
+                <div class="form-group">
+                    <label for="topic-title">Título</label>
+                    <input type="text" id="topic-title" placeholder="Escribe un título claro para tu pregunta" required>
+                </div>
+                <div class="form-group">
+                    <label for="topic-category">Categoría</label>
+                    <select id="topic-category" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="typescript">TypeScript</option>
+                        <option value="cpp">C++</option>
+                        <option value="projects">Proyectos</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="topic-content">Contenido</label>
+                    <textarea id="topic-content" rows="6" placeholder="Describe tu pregunta o tema de discusión con detalle..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="topic-code">Código (opcional)</label>
+                    <textarea id="topic-code" rows="4" placeholder="Si es relevante, incluye el código relacionado"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Publicar Tema</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CØDEX</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Términos</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CodeMaster. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/community.js"></script>
+</body>
+</html>

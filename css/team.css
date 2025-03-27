@@ -1,0 +1,67 @@
+/* Estilos para la página del equipo */
+.team-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    color: #4a6baf;
+    font-size: 2rem;
+}
+
+.team-role {
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.team-email {
+    color: #4a6baf;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    word-break: break-all;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.team-social a {
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.team-social a:hover {
+    color: #4a6baf;
+}
