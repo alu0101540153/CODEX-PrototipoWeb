@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CØDEX - Aprende a Programar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Aprende a programar de forma interactiva</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#lenguajes"><i class="fas fa-laptop-code"></i> Lenguajes</a>
+            <a href="#tutoriales"><i class="fas fa-graduation-cap"></i> Tutoriales</a>
+            <a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a>
+            <a href="#comunidad"><i class="fas fa-users"></i> Comunidad</a>
+            <a href="index.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesion</a>
+        </div>
+    </nav>
+    
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>¿Quieres aprender a programar sin aburrirte?</h2>
+                <p>Aprende con nuestro método interactivo basado en proyectos reales y consigue feedback inmediato.</p>
+                <button id="start-learning" class="btn-primary">
+                    <i class="fas fa-rocket"></i> Empieza ahora
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="/PrototipoWeb/img/programando.jpeg" alt="Persona programando">
+            </div>
+        </div>
+    </section>
+    
+    <section class="languages-section" id="lenguajes">
+        <div class="container">
+            <h2 class="section-title"><br>¿Qué lenguaje quieres aprender?</h2>
+            <p class="section-subtitle">Tenemos rutas de aprendizaje para todos los niveles</p>
+            
+            <div class="languages-grid">
+                <div class="language-card" data-lang="python">
+                    <div class="card-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Ideal para principiantes y aplicaciones de IA, ciencia de datos y backend.</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%;"></div>
+                        </div>
+                        <small>20% completado</small>
+                    </div>
+                    <a href="python.html" class="btn-outline">Comenzar</a>
+                </div>
+                
+                <div class="language-card" data-lang="javascript">
+                    <div class="card-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>El lenguaje de la web, esencial para desarrollo frontend y backend con Node.js.</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%;"></div>
+                        </div>
+                        <small>10% completado</small>
+                    </div>
+                    <a href="javascript.html" class="btn-outline">Comenzar</a>
+                </div>
+                
+                <div class="language-card" data-lang="typescript">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>JavaScript con tipos estáticos para aplicaciones más robustas y mantenibles.</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 5%;"></div>
+                        </div>
+                        <small>5% completado</small>
+                    </div>
+                    <a href="typescript.html" class="btn-outline">Comenzar</a>
+                </div>
+                
+                <div class="language-card" data-lang="cpp">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>C++</h3>
+                    <p>Lenguaje de alto rendimiento para sistemas, juegos y aplicaciones críticas.</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 15%;"></div>
+                        </div>
+                        <small>15% completado</small>
+                    </div>
+                    <a href="cpp.html" class="btn-outline">Comenzar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="community-section" id="comunidad">
+        <div class="container">
+            <div class="community-content">
+                <h2>Únete a nuestra comunidad</h2>
+                <p>Conéctate con otros aprendices, resuelve dudas y comparte tus proyectos.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn discord">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                    <a href="#" class="social-btn github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#" class="social-btn twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeMaster</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Términos</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CodeMaster. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

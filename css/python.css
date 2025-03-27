@@ -1,0 +1,35 @@
+/* Estilos específicos para la página de Python */
+:root {
+  --python-color: #3776AB;
+  --python-secondary: #FFD43B;
+}
+
+.language-hero {
+  background: linear-gradient(135deg, var(--python-color), #2d5f8b);
+}
+
+.btn-run {
+  background-color: var(--python-color);
+}
+
+.btn-run:hover {
+  background-color: #2d5f8b;
+}
+
+.progress {
+  background-color: var(--python-color);
+}
+
+.tutorial-card h3 {
+  color: var(--python-color);
+}
+
+.next-btn {
+  border-color: var(--python-color);
+  color: var(--python-color);
+}
+
+.next-btn:hover {
+  background-color: var(--python-color);
+  color: white;
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Python | CØDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/python.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <div class="logo">
+                  <i class="fas fa-code"></i>
+                  <h1>CØDEX</h1>
+              </div>
+              <p>Aprende Python de forma interactiva</p>
+          </div>
+      </header>
+      
+      <nav>
+          <div class="container">
+              <a href="inicio.html"><i class="fas fa-arrow-left"></i> Volver</a>
+              <a href="#basico"><i class="fas fa-graduation-cap"></i> Básico</a>
+              <a href="#intermedio"><i class="fas fa-layer-group"></i> Intermedio</a>
+              <a href="#avanzado"><i class="fas fa-rocket"></i> Avanzado</a>
+              <a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a>
+              <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+          </div>
+      </nav>
+      
+      <section class="language-hero" id="inicio">
+          <div class="container">
+              <div class="hero-content">
+                  <h2><i class="fab fa-python"></i> Aprende Python</h2>
+                  <p>Domina uno de los lenguajes más populares y versátiles con nuestra plataforma interactiva.</p>
+                  <div class="progress-container">
+                      <div class="progress-bar">
+                          <div class="progress" style="width: 20%;"></div>
+                      </div>
+                      <small>20% completado</small>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="tutorial-section" id="basico">
+          <div class="container">
+              <h2 class="section-title">Conceptos Básicos</h2>
+              <p class="section-subtitle">Comienza con los fundamentos de Python</p>
+              
+              <div class="tutorial-grid">
+                  <div class="tutorial-card">
+                      <h3>1. Hola Mundo</h3>
+                      <p>Aprende a escribir tu primer programa en Python.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-hello-world">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="hello-world-code">print("Hola, mundo!")</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="hello-world-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Siguiente lección <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+                  
+                  <div class="tutorial-card">
+                      <h3>2. Variables y Tipos de Datos</h3>
+                      <p>Aprende a almacenar y manipular información en Python.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-variables">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="variables-code"># Variables en Python
+  nombre = "Ana"
+  edad = 25
+  altura = 1.65
+  es_estudiante = True
+  
+  print(f"Nombre: {nombre}")
+  print(f"Edad: {edad}")
+  print(f"Altura: {altura}")
+  print(f"¿Es estudiante?: {es_estudiante}")</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="variables-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Siguiente lección <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+                  
+                  <div class="tutorial-card">
+                      <h3>3. Operaciones Matemáticas</h3>
+                      <p>Realiza cálculos básicos con Python.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-math">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="math-code"># Operaciones matemáticas básicas
+  a = 10
+  b = 3
+  
+  suma = a + b
+  resta = a - b
+  multiplicacion = a * b
+  division = a / b
+  division_entera = a // b
+  modulo = a % b
+  potencia = a ** b
+  
+  print(f"Suma: {suma}")
+  print(f"Resta: {resta}")
+  print(f"Multiplicación: {multiplicacion}")
+  print(f"División: {division}")
+  print(f"División entera: {division_entera}")
+  print(f"Módulo: {modulo}")
+  print(f"Potencia: {potencia}")</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="math-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Siguiente lección <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="tutorial-section" id="intermedio">
+          <div class="container">
+              <h2 class="section-title">Conceptos Intermedios</h2>
+              <p class="section-subtitle">Amplía tus conocimientos con estos conceptos</p>
+              
+              <div class="tutorial-grid">
+                  <div class="tutorial-card">
+                      <h3>4. Condicionales</h3>
+                      <p>Aprende a controlar el flujo de tu programa con if/else.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-conditionals">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="conditionals-code"># Condicionales en Python
+  edad = 18
+  
+  if edad < 18:
+      print("Eres menor de edad")
+  elif edad == 18:
+      print("Acabas de cumplir la mayoría de edad")
+  else:
+      print("Eres mayor de edad")
+  
+  # Operador ternario
+  mensaje = "Puedes votar" if edad >= 18 else "No puedes votar"
+  print(mensaje)</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="conditionals-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Siguiente lección <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+                  
+                  <div class="tutorial-card">
+                      <h3>5. Bucles</h3>
+                      <p>Aprende a repetir acciones con for y while.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-loops">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="loops-code"># Bucles en Python
+  
+  # Bucle for
+  print("Bucle for:")
+  for i in range(5):
+      print(f"Valor: {i}")
+  
+  # Bucle while
+  print("\nBucle while:")
+  contador = 0
+  while contador < 3:
+      print(f"Contador: {contador}")
+      contador += 1
+  
+  # Iterar sobre una lista
+  print("\nIterando sobre una lista:")
+  frutas = ["manzana", "banana", "cereza"]
+  for fruta in frutas:
+      print(fruta.title())</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="loops-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Siguiente lección <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="tutorial-section" id="avanzado">
+          <div class="container">
+              <h2 class="section-title">Conceptos Avanzados</h2>
+              <p class="section-subtitle">Domina Python con estos conceptos avanzados</p>
+              
+              <div class="tutorial-grid">
+                  <div class="tutorial-card">
+                      <h3>6. Funciones</h3>
+                      <p>Aprende a crear y usar funciones en Python.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-functions">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="functions-code"># Funciones en Python
+  
+  # Función básica
+  def saludar(nombre):
+      return f"Hola, {nombre}!"
+  
+  print(saludar("Juan"))
+  
+  # Función con parámetros opcionales
+  def calcular_iva(monto, iva=0.16):
+      return monto * iva
+  
+  print(f"IVA: {calcular_iva(100)}")
+  print(f"IVA especial: {calcular_iva(100, 0.08)}")
+  
+  # Función lambda (anónima)
+  cuadrado = lambda x: x ** 2
+  print(f"Cuadrado de 5: {cuadrado(5)}")</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="functions-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Siguiente lección <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="tutorial-section" id="proyectos">
+          <div class="container">
+              <h2 class="section-title">Proyectos Prácticos</h2>
+              <p class="section-subtitle">Aplica lo aprendido con estos proyectos</p>
+              
+              <div class="tutorial-grid">
+                  <div class="tutorial-card">
+                      <h3>Calculadora Básica</h3>
+                      <p>Crea una calculadora que realice operaciones básicas.</p>
+                      <div class="interactive-editor">
+                          <div class="editor-header">
+                              <span><i class="fab fa-python"></i> Editor Python</span>
+                              <button class="btn-run" id="run-calculator">
+                                  <i class="fas fa-play"></i> Ejecutar
+                              </button>
+                          </div>
+                          <div class="editor-content" contenteditable="true" id="calculator-code"># Calculadora básica
+  def calculadora():
+      print("1. Suma")
+      print("2. Resta")
+      print("3. Multiplicación")
+      print("4. División")
+      
+      opcion = input("Elige una opción (1-4): ")
+      num1 = float(input("Ingresa el primer número: "))
+      num2 = float(input("Ingresa el segundo número: "))
+      
+      if opcion == '1':
+          print(f"Resultado: {num1 + num2}")
+      elif opcion == '2':
+          print(f"Resultado: {num1 - num2}")
+      elif opcion == '3':
+          print(f"Resultado: {num1 * num2}")
+      elif opcion == '4':
+          if num2 != 0:
+              print(f"Resultado: {num1 / num2}")
+          else:
+              print("Error: División por cero")
+      else:
+          print("Opción inválida")
+  
+  # Para probar la calculadora, descomenta la siguiente línea:
+  # calculadora()</div>
+                          <div class="output-container">
+                              <div class="output-header">
+                                  <span>Resultado:</span>
+                              </div>
+                              <div class="output" id="calculator-output"></div>
+                          </div>
+                      </div>
+                      <button class="btn-outline next-btn">
+                          Ver siguiente proyecto <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <footer>
+          <div class="container">
+              <div class="footer-content">
+                  <div class="footer-logo">
+                      <i class="fas fa-code"></i>
+                      <span>CØDEX</span>
+                  </div>
+                  <div class="footer-links">
+                      <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                      <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                  </div>
+                  <div class="footer-copyright">
+                      &copy; 2023 CØDEX. Todos los derechos reservados.
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+      <script src="./js/loggear.js"></script>
+      <script src="./js/python.js"></script>
+</body>
+</html>
