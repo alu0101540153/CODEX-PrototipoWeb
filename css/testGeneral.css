@@ -1,0 +1,127 @@
+/* Estilos específicos para el test general */
+.test-hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.test-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.test-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.test-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.test-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question-card {
+    border-left: 4px solid var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question-title {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.form-check {
+    margin-bottom: 0.75rem;
+    padding-left: 2rem;
+}
+
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.2em;
+}
+
+.form-check-label {
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.submit-test {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    border: none;
+    transition: all 0.3s;
+}
+
+.submit-test:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.score-container {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.feedback-container {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.feedback-container i {
+    color: var(--primary);
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .test-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .question-title {
+        font-size: 1.1rem;
+    }
+    
+    .form-check-label {
+        font-size: 1rem;
+    }
+}

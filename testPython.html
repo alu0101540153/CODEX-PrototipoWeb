@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Python | CØDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/python.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Evalúa tus conocimientos de Python</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="python.html"><i class="fas fa-arrow-left"></i> Volver al curso</a>
+            <a href="#test"><i class="fas fa-question-circle"></i> Test</a>
+            <a href="index.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+        </div>
+    </nav>
+    
+    
+    <section class="language-hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2><i class="fab fa-python"></i> Test de Python</h2>
+                <p>Pon a prueba tus conocimientos con este cuestionario interactivo.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="test-section" id="test">
+        <div class="container">
+            <div class="test-container">
+                <h2 class="section-title">Test de Python</h2>
+                <p class="section-subtitle">Responde las siguientes 10 preguntas</p>
+                
+                <form id="pythonTestForm">
+                    <div class="question-card mb-4">
+                        <h3>1. ¿Cómo se imprime "Hola Mundo" en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                            <label class="form-check-label" for="q1a">print("Hola Mundo")</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                            <label class="form-check-label" for="q1b">echo "Hola Mundo"</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                            <label class="form-check-label" for="q1c">console.log("Hola Mundo")</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>2. ¿Cuál es el resultado de 5 ** 3 en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                            <label class="form-check-label" for="q2a">15</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                            <label class="form-check-label" for="q2b">125</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                            <label class="form-check-label" for="q2c">8</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>3. ¿Cómo se define una lista en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                            <label class="form-check-label" for="q3a">lista = [1, 2, 3]</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                            <label class="form-check-label" for="q3b">lista = {1, 2, 3}</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                            <label class="form-check-label" for="q3c">lista = (1, 2, 3)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>4. ¿Qué método se usa para añadir un elemento al final de una lista?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                            <label class="form-check-label" for="q4a">append()</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                            <label class="form-check-label" for="q4b">add()</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                            <label class="form-check-label" for="q4c">insert()</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>5. ¿Qué hace el método split() en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                            <label class="form-check-label" for="q5a">Divide una cadena en una lista</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                            <label class="form-check-label" for="q5b">Une dos cadenas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                            <label class="form-check-label" for="q5c">Elimina espacios en blanco</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>6. ¿Qué bucle se ejecuta mientras una condición sea verdadera?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                            <label class="form-check-label" for="q6a">for</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                            <label class="form-check-label" for="q6b">while</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                            <label class="form-check-label" for="q6c">loop</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>7. ¿Cómo se define una función en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                            <label class="form-check-label" for="q7a">def mi_funcion():</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                            <label class="form-check-label" for="q7b">function mi_funcion()</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                            <label class="form-check-label" for="q7c">func mi_funcion():</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>8. ¿Qué tipo de dato es inmutable en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                            <label class="form-check-label" for="q8a">Lista</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                            <label class="form-check-label" for="q8b">Tupla</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                            <label class="form-check-label" for="q8c">Diccionario</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>9. ¿Qué operador se usa para comentarios de una línea en Python?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                            <label class="form-check-label" for="q9a">//</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                            <label class="form-check-label" for="q9b">#</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9c" value="c">
+                            <label class="form-check-label" for="q9c">--</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-card mb-4">
+                        <h3>10. ¿Qué método se usa para leer entrada del usuario?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10a" value="a">
+                            <label class="form-check-label" for="q10a">input()</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10b" value="b">
+                            <label class="form-check-label" for="q10b">get()</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10c" value="c">
+                            <label class="form-check-label" for="q10c">read()</label>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg submit-test">
+                            <i class="fas fa-check-circle"></i> Ver resultados
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="results" class="results-container mt-5" style="display: none;">
+                    <h3 class="text-center mb-4">Resultados del Test</h3>
+                    <div class="score-container text-center mb-4">
+                        <h4>Tu puntuación: <span id="score">0</span>/10</h4>
+                        <div class="progress mt-3" style="height: 25px;">
+                            <div id="score-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="answers" class="answers-container"></div>
+                    
+                    <div class="text-center mt-4">
+                        <button id="retry-btn" class="btn btn-outline-primary">
+                            <i class="fas fa-redo"></i> Intentar de nuevo
+                        </button>
+                        <a href="python.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i> Volver al curso
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CØDEX</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CØDEX. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('pythonTestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Respuestas correctas
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a',
+                q6: 'b',
+                q7: 'a',
+                q8: 'b',
+                q9: 'b',
+                q10: 'a'
+            };
+            
+            // Explicaciones
+            const explanations = {
+                q1: 'En Python, se usa la función print() para mostrar mensajes en la consola.',
+                q2: 'El operador ** es para exponenciación, por lo que 5 ** 3 = 125.',
+                q3: 'Las listas se definen con corchetes [], los diccionarios con {} y las tuplas con ().',
+                q4: 'El método append() añade un elemento al final de la lista.',
+                q5: 'split() divide una cadena en una lista usando un separador (por defecto espacios).',
+                q6: 'El bucle while se ejecuta mientras su condición sea verdadera.',
+                q7: 'Las funciones en Python se definen con la palabra clave def.',
+                q8: 'Las tuplas son inmutables, no se pueden modificar después de creadas.',
+                q9: 'En Python, los comentarios de una línea comienzan con #.',
+                q10: 'input() es la función estándar para leer entrada del usuario.'
+            };
+            
+            let score = 0;
+            const formData = new FormData(this);
+            const answersContainer = document.getElementById('answers');
+            answersContainer.innerHTML = '';
+            
+            // Calcular puntuación y mostrar resultados
+            for (let i = 1; i <= 10; i++) {
+                const questionName = 'q' + i;
+                const userAnswer = formData.get(questionName);
+                const isCorrect = userAnswer === correctAnswers[questionName];
+                
+                if (isCorrect) {
+                    score++;
+                }
+                
+                // Crear elemento para mostrar cada respuesta
+                const answerElement = document.createElement('div');
+                answerElement.className = `answer-card mb-3 ${isCorrect ? 'correct' : 'incorrect'}`;
+                answerElement.innerHTML = `
+                    <h5>Pregunta ${i}</h5>
+                    <p><strong>Tu respuesta:</strong> ${document.querySelector(`input[name="${questionName}"]:checked`) && document.querySelector(`input[name="${questionName}"]:checked`).nextElementSibling ? document.querySelector(`input[name="${questionName}"]:checked`).nextElementSibling.textContent : 'No respondida'}</p>
+                    <p><strong>Respuesta correcta:</strong> ${document.querySelector(`input[name="${questionName}"][value="${correctAnswers[questionName]}"]`)?.nextElementSibling?.textContent}</p>
+                    <p class="explanation">${explanations[questionName]}</p>
+                `;
+                
+                answersContainer.appendChild(answerElement);
+            }
+            
+            // Mostrar puntuación
+            document.getElementById('score').textContent = score;
+            document.getElementById('score-progress').style.width = `${score * 10}%`;
+            document.getElementById('score-progress').textContent = `${score * 10}%`;
+            
+            // Cambiar color de la barra según el resultado
+            const progressBar = document.getElementById('score-progress');
+            if (score < 5) {
+                progressBar.classList.add('bg-danger');
+            } else if (score < 8) {
+                progressBar.classList.add('bg-warning');
+            } else {
+                progressBar.classList.add('bg-success');
+            }
+            
+            // Mostrar resultados y ocultar formulario
+            document.getElementById('pythonTestForm').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+            
+            // Scroll a los resultados
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Botón para reintentar
+        document.getElementById('retry-btn').addEventListener('click', function() {
+            document.getElementById('pythonTestForm').reset();
+            document.getElementById('pythonTestForm').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

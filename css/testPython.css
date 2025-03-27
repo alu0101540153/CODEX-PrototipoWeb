@@ -1,0 +1,111 @@
+/* Estilos específicos para la página de Test Python */
+.test-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.test-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.question-card {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--python-color);
+}
+
+.question-card h3 {
+    color: var(--python-color);
+    margin-bottom: 1rem;
+}
+
+.form-check {
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input {
+    margin-top: 0.25rem;
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+}
+
+.submit-test {
+    background-color: var(--python-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.submit-test:hover {
+    background-color: #2d5f8b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.score-container {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.answer-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.answer-card.correct {
+    background-color: #e6ffed;
+    border-left-color: #28a745;
+}
+
+.answer-card.incorrect {
+    background-color: #fff3f3;
+    border-left-color: #dc3545;
+}
+
+.explanation {
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.btn-outline-primary {
+    color: var(--python-color);
+    border-color: var(--python-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--python-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .test-container {
+        padding: 1.5rem;
+    }
+    
+    .question-card {
+        padding: 1rem;
+    }
+}
+

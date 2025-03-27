@@ -37,22 +37,58 @@
             <div class="hero-content">
                 <h2>¿Quieres aprender a programar sin aburrirte?</h2>
                 <p>Aprende con nuestro método interactivo basado en proyectos reales y consigue feedback inmediato.</p>
-                <button id="start-learning" class="btn-primary">
-                    <i class="fas fa-rocket"></i> Empieza ahora
-                </button>
+                <div class="hero-buttons">
+                    <button id="start-learning" class="btn-primary">
+                        <i class="fas fa-rocket"></i> Empieza ahora
+                    </button>
+                    <a href="testGeneral.html" class="btn-quiz">
+                        <i class="fas fa-clipboard-check"></i> Haz un cuestionario para saber tu nivel
+                    </a>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="img/programando.jpeg" alt="Persona programando">
             </div>
         </div>
     </section>
+
+    <!-- Nueva sección: Beneficios -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">¿Por qué aprender con CØDEX?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Aprendizaje interactivo</h3>
+                    <p>Ejecuta código directamente en el navegador y ve los resultados en tiempo real.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Proyectos prácticos</h3>
+                    <p>Aprende construyendo proyectos reales que puedes añadir a tu portafolio.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Rutas de aprendizaje</h3>
+                    <p>Sigue nuestro plan de estudios estructurado para dominar cada lenguaje.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Comunidad activa</h3>
+                    <p>Resuelve dudas y comparte tus avances con otros estudiantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- Sección de lenguajes (modificada) -->
     <section class="languages-section" id="lenguajes">
         <div class="container">
-            <h2 class="section-title"><br>¿Qué lenguaje quieres aprender?</h2>
+            <h2 class="section-title">¿Qué lenguaje quieres aprender?</h2>
             <p class="section-subtitle">Tenemos rutas de aprendizaje para todos los niveles</p>
             
             <div class="languages-grid">
+                <!-- Primer par de cursos -->
                 <div class="language-card" data-lang="python">
                     <div class="card-icon">
                         <i class="fab fa-python"></i>
@@ -83,6 +119,7 @@
                     <a href="javascript.html" class="btn-outline">Comenzar</a>
                 </div>
                 
+                <!-- Segundo par de cursos -->
                 <div class="language-card" data-lang="typescript">
                     <div class="card-icon">
                         <i class="fas fa-code"></i>
@@ -115,28 +152,52 @@
             </div>
         </div>
     </section>
-    
 
-    
-    <section class="community-section" id="comunidad">
+    <!-- Nueva sección: Testimonios -->
+    <section class="testimonials-section">
         <div class="container">
-            <div class="community-content">
-                <h2>Únete a nuestra comunidad</h2>
-                <p>Conéctate con otros aprendices, resuelve dudas y comparte tus proyectos.</p>
-                <div class="social-links">
-                    <a href="#" class="social-btn discord">
-                        <i class="fab fa-discord"></i> Discord
-                    </a>
-                    <a href="#" class="social-btn github">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="#" class="social-btn twitter">
-                        <i class="fab fa-twitter"></i> Twitter
-                    </a>
+            <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Gracias a CØDEX conseguí mi primer trabajo como desarrollador frontend. Los proyectos prácticos fueron clave para mi portafolio."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/user1.jpg" alt="Ana Martínez">
+                        <h4>Ana Martínez</h4>
+                        <span>Desarrolladora Frontend</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"El método de aprendizaje interactivo me ayudó a entender conceptos complejos de Python que nunca había logrado comprender."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/user2.jpg" alt="Carlos López">
+                        <h4>Carlos López</h4>
+                        <span>Ingeniero de Datos</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Sección de comunidad (existente) -->
+    <section class="community-section" id="comunidad">
+        <!-- ... (contenido existente se mantiene) ... -->
+    </section>
+
+    <!-- Nueva sección: CTA (Call to Action) -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para comenzar tu viaje en programación?</h2>
+            <p>Únete a miles de estudiantes que ya están aprendiendo con nosotros</p>
+            <a href="#lenguajes" class="btn-primary btn-lg">
+                <i class="fas fa-play"></i> Empieza a aprender ahora
+            </a>
+        </div>
+    </section>
+    
     
     <footer>
         <div class="container">

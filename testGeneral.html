@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Nivel General | CØDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/testGeneral.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CØDEX</h1>
+            </div>
+            <p>Descubre tu nivel de programación</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="inicio.html"><i class="fas fa-arrow-left"></i> Volver</a>
+            <a href="#test"><i class="fas fa-question-circle"></i> Test</a>
+            <a href="index.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Cerrar sesión</a>
+        </div>
+    </nav>
+    
+    <section class="test-hero" id="inicio">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h2><i class="fas fa-clipboard-check"></i> Test de Nivel General</h2>
+                <p>Responde estas 10 preguntas para evaluar tus conocimientos de programación</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="test-section" id="test">
+        <div class="container">
+            <form id="generalTestForm" class="test-form">
+                <!-- Pregunta 1 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">1. ¿Qué es una variable en programación?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                            <label class="form-check-label" for="q1a">Un contenedor para almacenar datos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                            <label class="form-check-label" for="q1b">Un tipo de bucle</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                            <label class="form-check-label" for="q1c">Una función matemática</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 2 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">2. ¿Qué lenguaje se ejecuta directamente en el navegador?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                            <label class="form-check-label" for="q2a">JavaScript</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                            <label class="form-check-label" for="q2b">Python</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                            <label class="form-check-label" for="q2c">Java</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 3 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">3. ¿Qué estructura controla el flujo de un programa?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                            <label class="form-check-label" for="q3a">Condicionales if/else</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                            <label class="form-check-label" for="q3b">Solo los bucles</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                            <label class="form-check-label" for="q3c">Las variables</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 4 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">4. ¿Qué hace el operador '==' en programación?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                            <label class="form-check-label" for="q4a">Compara si dos valores son iguales</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                            <label class="form-check-label" for="q4b">Asigna un valor a una variable</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                            <label class="form-check-label" for="q4c">Suma dos números</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 5 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">5. ¿Qué es un bucle 'for'?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                            <label class="form-check-label" for="q5a">Una estructura que repite código un número determinado de veces</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                            <label class="form-check-label" for="q5b">Un tipo de variable</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                            <label class="form-check-label" for="q5c">Una condición para ejecutar código</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 6 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">6. ¿Qué es una función en programación?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                            <label class="form-check-label" for="q6a">Un bloque de código reutilizable que realiza una tarea específica</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                            <label class="form-check-label" for="q6b">Un tipo de dato</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                            <label class="form-check-label" for="q6c">Una operación matemática</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 7 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">7. ¿Qué es un array?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                            <label class="form-check-label" for="q7a">Una estructura que almacena múltiples valores en una sola variable</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                            <label class="form-check-label" for="q7b">Un tipo de bucle</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                            <label class="form-check-label" for="q7c">Una operación de comparación</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 8 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">8. ¿Qué significa HTML?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                            <label class="form-check-label" for="q8a">HyperText Markup Language</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                            <label class="form-check-label" for="q8b">Hyperlinks and Text Markup Language</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                            <label class="form-check-label" for="q8c">Home Tool Markup Language</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 9 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">9. ¿Qué es un bug en programación?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                            <label class="form-check-label" for="q9a">Un error o fallo en el código</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                            <label class="form-check-label" for="q9b">Un tipo de variable</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9c" value="c">
+                            <label class="form-check-label" for="q9c">Una función especial</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 10 -->
+                <div class="question-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="question-title">10. ¿Qué hace el operador '++' en muchos lenguajes?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10a" value="a">
+                            <label class="form-check-label" for="q10a">Incrementa un valor en 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10b" value="b">
+                            <label class="form-check-label" for="q10b">Suma dos números</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10c" value="c">
+                            <label class="form-check-label" for="q10c">Compara dos valores</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg submit-test">
+                        <i class="fas fa-check-circle"></i> Calcular mi resultado
+                    </button>
+                </div>
+            </form>
+            
+            <div id="results" class="results-container mt-5" style="display: none;">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Resultados del Test</h3>
+                        <div class="score-container my-4">
+                            <h4>Tu puntuación: <span id="score" class="display-4">0</span>/10</h4>
+                            <div class="progress mt-3" style="height: 25px;">
+                                <div id="score-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        
+                        <div id="feedback" class="feedback-container mb-4">
+                            <i id="feedback-icon" class="fas fa-meh fa-3x mb-3"></i>
+                            <p id="feedback-text" class="lead">¡Sigue practicando!</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center gap-3">
+                            <button id="retry-btn" class="btn btn-outline-primary">
+                                <i class="fas fa-redo"></i> Intentar de nuevo
+                            </button>
+                            <a href="inicio.html" class="btn btn-primary">
+                                <i class="fas fa-home"></i> Volver al inicio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CØDEX</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 CØDEX. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('generalTestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Respuestas correctas
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'a',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a',
+                q9: 'a',
+                q10: 'a'
+            };
+            
+            let score = 0;
+            const formData = new FormData(this);
+            
+            // Calcular puntuación
+            for (let i = 1; i <= 10; i++) {
+                const questionName = 'q' + i;
+                if (formData.get(questionName)) {
+                    if (formData.get(questionName) === correctAnswers[questionName]) {
+                        score++;
+                    }
+                }
+            }
+            
+            // Mostrar resultados
+            document.getElementById('score').textContent = score;
+            document.getElementById('score-progress').style.width = `${(score / 10) * 100}%`;
+            document.getElementById('score-progress').textContent = `${Math.round((score / 10) * 100)}%`;
+            
+            // Cambiar color de la barra según el resultado
+            const progressBar = document.getElementById('score-progress');
+            if (score < 4) {
+                progressBar.classList.add('bg-danger');
+                document.getElementById('feedback-icon').className = 'fas fa-sad-tear fa-3x mb-3';
+                document.getElementById('feedback-text').textContent = '¡No te rindas! Todos empezamos desde cero. Con nuestros cursos podrás mejorar.';
+            } else if (score < 7) {
+                progressBar.classList.add('bg-warning');
+                document.getElementById('feedback-icon').className = 'fas fa-meh fa-3x mb-3';
+                document.getElementById('feedback-text').textContent = '¡Vas por buen camino! Sigue aprendiendo. Con nuestros cursos podrás mejorar.';
+            } else if (score < 9) {
+                progressBar.classList.add('bg-info');
+                document.getElementById('feedback-icon').className = 'fas fa-smile fa-3x mb-3';
+                document.getElementById('feedback-text').textContent = '¡Buen trabajo! Tienes una base sólida. Con nuestros cursos podrás mejorar.';
+            } else {
+                progressBar.classList.add('bg-success');
+                document.getElementById('feedback-icon').className = 'fas fa-grin-stars fa-3x mb-3';
+                document.getElementById('feedback-text').textContent = '¡Excelente! Eres un experto en programación. Con nuestros cursos podrás mejorar.';
+            }
+
+            // Crear botón motivacional para cursos
+            const feedbackContainer = document.getElementById('feedback');
+            const courseButton = document.createElement('a');
+            courseButton.href = 'inicio.html';
+            courseButton.className = 'btn btn-success mt-3';
+            courseButton.innerHTML = '<i class="fas fa-graduation-cap"></i> ¡Mejora tus habilidades, tenemos múltiples cursos disponibles para ti!';
+            feedbackContainer.appendChild(courseButton);
+            // Mostrar resultados y ocultar formulario
+            document.getElementById('generalTestForm').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+            
+            // Scroll a los resultados
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Botón para reintentar
+        document.getElementById('retry-btn').addEventListener('click', function() {
+            document.getElementById('generalTestForm').reset();
+            document.getElementById('generalTestForm').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
