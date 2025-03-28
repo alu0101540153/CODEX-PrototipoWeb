@@ -1,0 +1,161 @@
+/* Estilos específicos para la página de tutoriales */
+.tutoriales-main {
+    padding: 2rem 0;
+}
+
+.tutoriales-section {
+    padding: 4rem 0;
+}
+
+.tutoriales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tutorial-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.tutorial-info {
+    padding: 1.5rem;
+}
+
+.tutorial-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.meta-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.meta-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.tutorial-info p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-info .btn-outline {
+    width: 100%;
+    text-align: center;
+}
+
+/* Sección de Podcast */
+.podcast-section {
+    padding: 4rem 0;
+    background-color: var(--light);
+}
+
+.podcast-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.podcast-info {
+    padding: 2rem;
+}
+
+.podcast-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.podcast-info p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.audio-player {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+.podcast-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.podcast-links .btn-outline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.podcast-image {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.podcast-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tutoriales-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .podcast-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .podcast-image {
+        height: 200px;
+    }
+}
