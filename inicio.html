@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="css/cards.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-       <!-- Archivos de bootstrap -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
+    <!-- Archivos de bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
     <header>
         <div class="container">
             <div class="logo">
-                <i class="fas fa-code"></i>
+                <i class="fas fa-code" aria-hidden="true"></i>
                 <h1>CØDEX</h1>
             </div>
             <p>Aprende a programar de forma interactiva</p>
@@ -52,309 +53,356 @@
                 <i class="fas fa-users-cog" aria-hidden="true"></i> 
                 <span>Equipo CODEX</span>
             </a>
-            <a href="index.html" class="login-btn nav-link">
-                <i class="fas fa-sign-in-alt" aria-hidden="true"></i> 
-                <span>Cerrar sesión</span>
-            </a>
+            <div class="dropdown" role="menu">
+                <button class="dropdown-toggle login-btn nav-link" aria-expanded="false" aria-haspopup="menu">
+                    <i class="fas fa-sign-in-alt" aria-hidden="true"></i> 
+                    <span>Mi cuenta</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="menuitem"><a href="perfil.html">Mi perfil</a></li>
+                    <li role="menuitem"><a href="configuracion.html">Configuración</a></li>
+                    <li role="menuitem"><a href="index.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     
-    <section class="hero" id="inicio">
-        <div class="container">
-            <div class="hero-content">
-                <h2>¿Quieres aprender a programar sin aburrirte?</h2>
-                <p>Aprende con nuestro método interactivo basado en proyectos reales y consigue feedback inmediato.</p>
-                <div class="hero-buttons">
-                    <a href="testGeneral.html" class="btn-quiz">
-                        <i class="fas fa-clipboard-check"></i> Haz un cuestionario para saber tu nivel
+    <main id="main-content" tabindex="-1">
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>¿Quieres aprender a programar sin aburrirte?</h2>
+                    <p>Aprende con nuestro método interactivo basado en proyectos reales y consigue feedback inmediato.</p>
+                    <div class="hero-buttons">
+                        <button id="start-learning" class="btn-primary" aria-describedby="tooltip-start">
+                            <i class="fas fa-rocket" aria-hidden="true"></i> Empieza ahora
+                        </button>
+                        <div id="tooltip-start" role="tooltip" class="tooltip">Comienza tu viaje de aprendizaje</div>
+                        
+                        <a href="testGeneral.html" class="btn-quiz">
+                            <i class="fas fa-clipboard-check" aria-hidden="true"></i> Haz un cuestionario para saber tu nivel
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/programando.jpeg" alt="Persona programando en un ordenador con múltiples pantallas">
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección: Beneficios -->
+        <section class="benefits-section" aria-labelledby="benefits-heading">
+            <div class="container">
+                <h2 id="benefits-heading" class="section-title">¿Por qué aprender con CØDEX?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card" tabindex="0">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        <h3>Aprendizaje interactivo</h3>
+                        <p>Ejecuta código directamente en el navegador y ve los resultados en tiempo real.</p>
+                    </div>
+                    <div class="benefit-card" tabindex="0">
+                        <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                        <h3>Proyectos prácticos</h3>
+                        <p>Aprende construyendo proyectos reales que puedes añadir a tu portafolio.</p>
+                    </div>
+                    <div class="benefit-card" tabindex="0">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        <h3>Rutas de aprendizaje</h3>
+                        <p>Sigue nuestro plan de estudios estructurado para dominar cada lenguaje.</p>
+                    </div>
+                    <div class="benefit-card" tabindex="0">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h3>Comunidad activa</h3>
+                        <p>Resuelve dudas y comparte tus avances con otros estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de lenguajes -->
+        <section class="languages-section" id="lenguajes" aria-labelledby="languages-heading">
+            <div class="container">
+                <h2 id="languages-heading" class="section-title"><br>¿Qué lenguaje quieres aprender?</h2>
+                <p class="section-subtitle">Tenemos rutas de aprendizaje para todos los niveles</p>
+                
+                <div class="languages-grid">
+                    <!-- Primer par de cursos -->
+                    <div class="language-card" data-lang="python" tabindex="0" role="article" aria-labelledby="python-title">
+                        <div class="card-icon" aria-hidden="true">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 id="python-title">Python</h3>
+                        <p>Ideal para principiantes y aplicaciones de IA, ciencia de datos y backend.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 20%;"></div>
+                            </div>
+                            <small>20% completado</small>
+                        </div>
+                        <a href="python.html" class="btn-outline">Comenzar</a>
+                    </div>
+                    
+                    <div class="language-card" data-lang="javascript" tabindex="0" role="article" aria-labelledby="js-title">
+                        <div class="card-icon" aria-hidden="true">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 id="js-title">JavaScript</h3>
+                        <p>El lenguaje de la web, esencial para desarrollo frontend y backend con Node.js.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 10%;"></div>
+                            </div>
+                            <small>10% completado</small>
+                        </div>
+                        <a href="javascript.html" class="btn-outline">Comenzar</a>
+                    </div>
+                    
+                    <!-- Segundo par de cursos -->
+                    <div class="language-card" data-lang="typescript" tabindex="0" role="article" aria-labelledby="ts-title">
+                        <div class="card-icon" aria-hidden="true">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 id="ts-title">TypeScript</h3>
+                        <p>JavaScript con tipos estáticos para aplicaciones más robustas y mantenibles.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 5%;"></div>
+                            </div>
+                            <small>5% completado</small>
+                        </div>
+                        <a href="typescript.html" class="btn-outline">Comenzar</a>
+                    </div>
+                    
+                    <div class="language-card" data-lang="cpp" tabindex="0" role="article" aria-labelledby="cpp-title">
+                        <div class="card-icon" aria-hidden="true">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 id="cpp-title">C++</h3>
+                        <p>Lenguaje de alto rendimiento para sistemas, juegos y aplicaciones críticas.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 15%;"></div>
+                            </div>
+                            <small>15% completado</small>
+                        </div>
+                        <a href="cpp.html" class="btn-outline">Comenzar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección: Testimonios -->
+        <section class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading" class="section-title">Lo que dicen nuestros estudiantes</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" tabindex="0">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                <p>"Gracias a CØDEX conseguí mi primer trabajo como desarrollador frontend. Los proyectos prácticos fueron clave para mi portafolio."</p>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/mujer.jpg" alt="Ana Martínez sonriendo">
+                            <h4>Ana Martínez</h4>
+                            <span>Desarrolladora Frontend</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" tabindex="0">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                <p>"El método de aprendizaje interactivo me ayudó a entender conceptos complejos de Python que nunca había logrado comprender."</p>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/hombre.jpg" alt="Carlos López con gafas">
+                            <h4>Carlos López</h4>
+                            <span>Ingeniero de Datos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Clases Presenciales -->
+        <section class="location-section" aria-labelledby="location-heading">
+            <div class="container">
+                <h2 id="location-heading" class="section-title">¿Dónde se encuentran nuestras clases presenciales?</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>Nuestro centro de formación</h3>
+                        <p>ESIT, ULL<br>
+                        Tenerife, España</p>
+                        
+                        <div class="schedule-table">
+                            <h3>Horarios de clases</h3>
+                            <div role="region" aria-labelledby="schedule-heading" tabindex="0">
+                                <table id="schedule">
+                                    <caption id="schedule-heading" class="sr-only">Horario semanal de clases</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Día</th>
+                                            <th scope="col">Mañana</th>
+                                            <th scope="col">Tarde</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Lunes</th>
+                                            <td>9:00 - 13:00</td>
+                                            <td>16:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Martes</th>
+                                            <td>9:00 - 13:00</td>
+                                            <td>16:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Miércoles</th>
+                                            <td>9:00 - 13:00</td>
+                                            <td>16:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Jueves</th>
+                                            <td>9:00 - 13:00</td>
+                                            <td>16:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Viernes</th>
+                                            <td>9:00 - 13:00</td>
+                                            <td>16:00 - 19:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sábado</th>
+                                            <td>10:00 - 14:00</td>
+                                            <td>Cerrado</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h3>Contacto</h3>
+                            <p><i class="fas fa-phone" aria-hidden="true"></i> +34 910 123 456</p>
+                            <p><i class="fas fa-envelope" aria-hidden="true"></i> info@codex.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2014.1734209258711!2d-16.32088951775419!3d28.48319293033981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cda3fa06883d%3A0x16fb5f572e86cb7f!2sEscuela%20Superior%20de%20Ingenier%C3%ADa%20y%20Tecnolog%C3%ADa!5e0!3m2!1ses!2ses!4v1743183689123!5m2!1ses!2ses" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de ubicación de ESIT, ULL en Tenerife">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel Accesible -->
+        <section aria-labelledby="carousel-heading">
+            <div class="container">
+                <h2 id="carousel-heading" class="sr-only">Galería de imágenes sobre programación</h2>
+                <div id="carrusel" class="carousel slide" data-ride="carousel" aria-label="Galería de imágenes">
+                    <!-- Indicadores como lista -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carrusel" data-slide-to="0" class="active" aria-label="Slide 1: Programación orientada a objetos"></li>
+                        <li data-target="#carrusel" data-slide-to="1" aria-label="Slide 2: Aprende a programar"></li>
+                        <li data-target="#carrusel" data-slide-to="2" aria-label="Slide 3: Programación para niños"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" role="option">
+                            <img src="/PrototipoWeb/img/programacion-orientada-objetos-1200x630.original.jpg" alt="Conceptos de programación orientada a objetos">
+                            <div class="carousel-caption">
+                                <h3>Aprende programación orientada a objetos</h3>
+                            </div>
+                        </div>
+
+                        <div class="item" role="option">
+                            <img src="/PrototipoWeb/img//aprende-a-programar-con-cursos-de-programación.jpeg" alt="Personas aprendiendo a programar juntas">
+                            <div class="carousel-caption">
+                                <h3>Aprende en comunidad</h3>
+                            </div>
+                        </div>
+
+                        <div class="item" role="option">
+                            <img src="/PrototipoWeb/img/lg-programacion-ninos.jpg" alt="Niños aprendiendo programación">
+                            <div class="carousel-caption">
+                                <h3>Programación para todas las edades</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles con texto accesible -->
+                    <a class="left carousel-control" href="#carrusel" role="button" data-slide="prev" aria-label="Imagen anterior">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="right carousel-control" href="#carrusel" role="button" data-slide="next" aria-label="Siguiente imagen">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="img/programando.jpeg" alt="Persona programando">
+        </section>
+        
+        <!-- Nueva sección: CTA (Call to Action) -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">¿Listo para comenzar tu viaje en la programación?</h2>
+                <p>Únete a miles de estudiantes que ya están aprendiendo con nosotros</p>
+                <a href="#lenguajes" class="btn-primary btn-lg">
+                    <i class="fas fa-play" aria-hidden="true"></i> Empieza a aprender ahora
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Nueva sección: Beneficios -->
-    <section class="benefits-section">
-        <div class="container">
-            <h2 class="section-title">¿Por qué aprender con CØDEX?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Aprendizaje interactivo</h3>
-                    <p>Ejecuta código directamente en el navegador y ve los resultados en tiempo real.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-project-diagram"></i>
-                    <h3>Proyectos prácticos</h3>
-                    <p>Aprende construyendo proyectos reales que puedes añadir a tu portafolio.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Rutas de aprendizaje</h3>
-                    <p>Sigue nuestro plan de estudios estructurado para dominar cada lenguaje.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Comunidad activa</h3>
-                    <p>Resuelve dudas y comparte tus avances con otros estudiantes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     
-    <!-- Sección de lenguajes (modificada) -->
-    <section class="languages-section" id="lenguajes">
-        <div class="container">
-            <h2 class="section-title"><br>¿Qué lenguaje quieres aprender?</h2>
-            <p class="section-subtitle">Tenemos rutas de aprendizaje para todos los niveles</p>
-            
-            <div class="languages-grid">
-                <!-- Primer par de cursos -->
-                <div class="language-card" data-lang="python">
-                    <div class="card-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3>Python</h3>
-                    <p>Ideal para principiantes y aplicaciones de IA, ciencia de datos y backend.</p>
-                    <div class="progress-container">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 20%;"></div>
-                        </div>
-                        <small>20% completado</small>
-                    </div>
-                    <a href="python.html" class="btn-outline">Comenzar</a>
+    <!-- Modal de ejemplo -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">¿Necesitas ayuda para elegir?</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                
-                <div class="language-card" data-lang="javascript">
-                    <div class="card-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>El lenguaje de la web, esencial para desarrollo frontend y backend con Node.js.</p>
-                    <div class="progress-container">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 10%;"></div>
-                        </div>
-                        <small>10% completado</small>
-                    </div>
-                    <a href="javascript.html" class="btn-outline">Comenzar</a>
+                <div class="modal-body">
+                    <p>Si no estás seguro de qué lenguaje aprender primero, te recomendamos comenzar con Python por su sintaxis sencilla y amplia aplicabilidad.</p>
+                    <p>Nuestro cuestionario de nivel también puede ayudarte a tomar una decisión informada.</p>
                 </div>
-                
-                <!-- Segundo par de cursos -->
-                <div class="language-card" data-lang="typescript">
-                    <div class="card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>TypeScript</h3>
-                    <p>JavaScript con tipos estáticos para aplicaciones más robustas y mantenibles.</p>
-                    <div class="progress-container">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 5%;"></div>
-                        </div>
-                        <small>5% completado</small>
-                    </div>
-                    <a href="typescript.html" class="btn-outline">Comenzar</a>
-                </div>
-                
-                <div class="language-card" data-lang="cpp">
-                    <div class="card-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>C++</h3>
-                    <p>Lenguaje de alto rendimiento para sistemas, juegos y aplicaciones críticas.</p>
-                    <div class="progress-container">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 15%;"></div>
-                        </div>
-                        <small>15% completado</small>
-                    </div>
-                    <a href="cpp.html" class="btn-outline">Comenzar</a>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a href="testGeneral.html" class="btn btn-primary">Hacer cuestionario</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Nueva sección: Testimonios -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Gracias a CØDEX conseguí mi primer trabajo como desarrollador frontend. Los proyectos prácticos fueron clave para mi portafolio."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="img/mujer.jpg" alt="Ana Martínez">
-                        <h4>Ana Martínez</h4>
-                        <span>Desarrolladora Frontend</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"El método de aprendizaje interactivo me ayudó a entender conceptos complejos de Python que nunca había logrado comprender."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="img/hombre.jpg" alt="Carlos López">
-                        <h4>Carlos López</h4>
-                        <span>Ingeniero de Datos</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Nueva sección: Clases Presenciales -->
-    <section class="location-section">
-        <div class="container">
-            <h2 class="section-title">¿Dónde se encuentran nuestras clases presenciales?</h2>
-            <div class="location-content">
-                <div class="location-info">
-                    <h3>Nuestro centro de formación</h3>
-                    <p>ESIT, ULL<br>
-                    Tenerife, España</p>
-                    
-                    <div class="schedule-table">
-                        <h3>Horarios de clases</h3>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Día</th>
-                                    <th>Mañana</th>
-                                    <th>Tarde</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lunes</td>
-                                    <td>9:00 - 13:00</td>
-                                    <td>16:00 - 20:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Martes</td>
-                                    <td>9:00 - 13:00</td>
-                                    <td>16:00 - 20:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Miércoles</td>
-                                    <td>9:00 - 13:00</td>
-                                    <td>16:00 - 20:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Jueves</td>
-                                    <td>9:00 - 13:00</td>
-                                    <td>16:00 - 20:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Viernes</td>
-                                    <td>9:00 - 13:00</td>
-                                    <td>16:00 - 19:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sábado</td>
-                                    <td>10:00 - 14:00</td>
-                                    <td>Cerrado</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="contact-info">
-                        <h3>Contacto</h3>
-                        <p><i class="fas fa-phone"></i> +34 910 123 456</p>
-                        <p><i class="fas fa-envelope"></i> info@codex.com</p>
-                    </div>
-                </div>
-                
-                <div class="location-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2014.1734209258711!2d-16.32088951775419!3d28.48319293033981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cda3fa06883d%3A0x16fb5f572e86cb7f!2sEscuela%20Superior%20de%20Ingenier%C3%ADa%20y%20Tecnolog%C3%ADa!5e0!3m2!1ses!2ses!4v1743183689123!5m2!1ses!2ses" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-
-<div class="container">
-    <br>
-    <div id="carrusel" class="carousel slide" data-ride="carousel">
-  
-      <!-- Opcional, bullets abajo para saltar directamente a una foto (si los pones tiene q haber 1 por foto) -->
-      <ol class="carousel-indicators">
-        <li data-target="#carrusel" data-slide-to="0" class="active"></li>
-        <li data-target="#carrusel" data-slide-to="1"></li>
-        <li data-target="#carrusel" data-slide-to="2"></li>
-      </ol>
-  
-      <!-- Contenedor de las fotos -->
-      <div class="carousel-inner" role="listbox">
-  
-        <!-- Foto 1 -->
-        <div class="item active">
-          <img src="/PrototipoWeb/img/programacion-orientada-objetos-1200x630.original.jpg">
-        </div>
-  
-        <!-- Foto 2 -->
-        <div class="item">
-          <img src="/PrototipoWeb/img//aprende-a-programar-con-cursos-de-programación.jpeg">
-        </div>
-  
-        <!-- Foto 3 -->
-        <div class="item">
-          <img src="/PrototipoWeb/img/lg-programacion-ninos.jpg">
-        </div>
-  
     </div>
-  
-      <!-- Controles para pasar las fotos -->
-      <a class="left carousel-control" href="#carrusel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carrusel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    </section>
-    
-    <!-- Nueva sección: CTA (Call to Action) -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>¿Listo para comenzar tu viaje en la programación?</h2>
-            <p>Únete a miles de estudiantes que ya están aprendiendo con nosotros</p>
-            <a href="#lenguajes" class="btn-primary btn-lg">
-                <i class="fas fa-play"></i> Empieza a aprender ahora
-            </a>
-        </div>
-    </section>
-    
     
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <i class="fas fa-code"></i>
+                    <i class="fas fa-code" aria-hidden="true"></i>
                     <span>CØDEX</span>
                 </div>
-                <div class="footer-links">
-                    <a href="#">Términos</a>
-                    <a href="#">Privacidad</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">FAQ</a>
-                </div>
+                <nav aria-label="Enlaces secundarios">
+                    <div class="footer-links">
+                        <a href="#">Términos</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </nav>
                 <div class="footer-copyright">
                     &copy; 2023 CØDEX. Todos los derechos reservados. Grupo 9, UYA, ULL.
                 </div>
@@ -362,8 +410,42 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/editor.js"></script>
     <script src="js/modal.js"></script>
+    
+    <!-- Script para accesibilidad -->
+    <script>
+    $(document).ready(function() {
+        // Manejo del modal
+        $('#start-learning').click(function() {
+            $('#exampleModal').modal('show');
+        });
+        
+        // Gestión de foco en modales
+        $('#exampleModal').on('shown.bs.modal', function () {
+            $('#modalTitle').focus();
+        }).on('hidden.bs.modal', function () {
+            $('#start-learning').focus();
+        });
+        
+        // Mejoras para el carrusel
+        $('#carrusel').on('slid.bs.carousel', function () {
+            var activeSlide = $(this).find('.item.active');
+            activeSlide.attr('tabindex', '0');
+            $(this).find('.item').not(activeSlide).removeAttr('tabindex');
+        });
+        
+        // Inicializar tooltips
+        $('[aria-describedby]').hover(function() {
+            var tooltipId = $(this).attr('aria-describedby');
+            $('#' + tooltipId).css('visibility', 'visible');
+        }, function() {
+            var tooltipId = $(this).attr('aria-describedby');
+            $('#' + tooltipId).css('visibility', 'hidden');
+        });
+    });
+    </script>
 </body>
 </html>

@@ -911,3 +911,74 @@ nav a.active {
   font-size: 0.8rem;
   margin-right: 8px;
 }
+
+/* Estilos de accesibilidad */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #4a6baf;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Estilos para el foco */
+a:focus, button:focus, input:focus, select:focus, textarea:focus,
+[tabindex="0"]:focus {
+  outline: 3px solid #4a6baf;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Tooltips */
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  z-index: 100;
+}
+
+/* Mejoras para el dropdown */
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+  display: block;
+}
+
+/* Mejoras para el carrusel */
+.carousel-inner [role="option"] {
+  outline: none;
+}
+
+/* Estilos para modales */
+.modal {
+  color: #333;
+}
+
+.modal-header .close {
+  font-size: 1.5rem;
+  line-height: 1;
+}
