@@ -1,0 +1,21 @@
+        /* Ajuste de tamaño de las imágenes del carrusel */
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 30px; /* Ancho reducido aún más */
+            height: 5px; /* Altura reducida aún más */
+            object-fit: cover;
+            margin: auto;
+            border-radius: 30px;
+        }
+        
+        /* Ajuste de los controles del carrusel */
+        .carousel-control {
+            width: 1%;
+        }
+
+        /* Centrar el contenedor del carrusel y reducir su tamaño */
+        .carousel-container {
+            max-width: 10px;
+            margin: auto;
+            padding: 2px 0;
+        }
