@@ -388,6 +388,7 @@
     resize: vertical;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
     .community-layout {

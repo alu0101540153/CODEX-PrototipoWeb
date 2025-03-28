@@ -504,6 +504,59 @@ footer {
       grid-template-columns: 1fr;
   }
 }
+/* Mejoras de accesibilidad para navegación */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+  background-color: var(--light-gray);
+  color: var(--primary);
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.nav-link[aria-current="page"] {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Mejoras para el foco */
+.nav-link:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Mejoras para el botón de login */
+.login-btn {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.login-btn:hover, 
+.login-btn:focus {
+  background-color: #d91a6d;
+  outline: 2px solid white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero .container {
