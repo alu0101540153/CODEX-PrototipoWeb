@@ -523,6 +523,15 @@ nav {
   text-decoration: none;
 }
 
+.nav-link.active {
+  background-color: var(--primary);
+  color: white !important;
+}
+
+.nav-link.active:hover {
+    background-color: var(--primary-dark);
+}
+
 .nav-link:hover, 
 .nav-link:focus {
   background-color: var(--light-gray);
