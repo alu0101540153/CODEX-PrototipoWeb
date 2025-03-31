@@ -34,6 +34,13 @@ function loguear() {
         alert("Datos incorrectos");
       }
       break;
+      case "Pavel":
+      if(pass=="1234") {
+        window.location="inicio.html";
+      } else {
+        alert("Datos incorrectos");
+      }
+      break;
     default:
       alert("Datos incorrectos");
   }

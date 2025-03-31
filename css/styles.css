@@ -996,3 +996,14 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus,
   font-size: 1.5rem;
   line-height: 1;
 }
+
+/* Mostrar controles solo al recibir foco o hover */
+.carousel-control {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-control:focus-visible,
+.carousel-control:hover {
+  opacity: 1;
+}
