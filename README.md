@@ -1,4 +1,9 @@
-# PrototipoWeb
+# CODEX💻: PrototipoWeb  https://alu0101540153.github.io/PrototipoWeb/
+Prototipo de una web para el apredizaje de programación, usando HTML css.
+
+### usuario de ejemplo:
+user: victor     
+constraseña: 1515
 
 ## Componentes del grupo
 Víctor Rodríguez Dorta alu0101540153@ull.edu.es
