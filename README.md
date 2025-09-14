@@ -1,4 +1,4 @@
-# CODEX💻: PrototipoWeb  https://alu0101540153.github.io/PrototipoWeb/
+# CODEX💻: PrototipoWeb  [https://alu0101540153.github.io/PrototipoWeb/](https://alu0101540153.github.io/CODEX-PrototipoWeb/)
 Prototipo de una web para el apredizaje de programación, usando HTML css.
 
 ### usuario de ejemplo:
